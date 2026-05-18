@@ -33,11 +33,11 @@ Clique em qualquer uma das etapas abaixo para acessar a documentação técnica 
 * **Stack DevOps Open Source:** Planejamento de uma infraestrutura escalável baseada em Git/GitLab para controle de versão, Jenkins para automação de Pipelines (CI/CD), Ansible e Terraform para Infraestrutura como Código (IaC).
 * **Orquestração e Monitoramento:** Previsão de clusters Kubernetes rodando em nós Linux com escalabilidade automática (HPA), monitorados continuamente por Prometheus e Grafana.
 
-### [🔐 4. Segurança desde o Design - Shift-Left](./04-analise-seguranca/)
+### [🔐 4. Segurança desde o Design - Shift-Left](./04-shift-left-e-seguranca/)
 * **Modelagem de Ameaças:** Proteção proativa mapeando riscos do OWASP Top 10, como Injeção de SQL (Risco Crítico), Quebra de Autenticação (Risco Alto) e Cross-Site Scripting - XSS (Risco Médio).
 * **Controles e Testes:** Implementação de consultas parametrizadas (*Prepared Statements*), hashing seguro de senhas (BCrypt/Argon2), controle de acesso baseado em funções (RBAC) e planejamento de testes automatizados via SAST e DAST.
 
-### [🐳 5. Implementação Prática e Conteinerização](./05-conteinerizacao/)
+### [🐳 5. Implementação Prática e Conteinerização](./05-ambientes-docker/)
 * **Ambiente Isolado:** Migração da aplicação desenvolvida em Golang para containers Docker individuais, garantindo a padronização do deploy.
 * **Orquestração local:** Utilização do Docker-Compose para gerenciar o mapeamento de portas (8080:8080) e redes internas.
 * **Persistência de Dados:** Resolução do desafio da volatilidade dos containers (natureza efêmera) através da configuração de **Docker Volumes**, mapeando o diretório da VM para o container e garantindo a retenção permanente dos dados.

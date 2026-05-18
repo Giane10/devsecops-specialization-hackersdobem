@@ -8,13 +8,13 @@ Bem-vindo ao repositório do **SalaSegura**! Este projeto prático foi desenvolv
 
 ## 🗂️ Navegação do Projeto
 
-Clique em qualquer uma das etapas abaixo para acessar a documentação técnica detalhada e os artefatos de cada entrega:
+Clique em qualquer uma das etapas abaixo para acessar a documentação técnica detalhada e os artefatar de cada entrega:
 
 1. [📋 Etapa 1: Design, Contextualização e Requisitos](./01-design-e-requisitos/)
 2. [🏃‍♂️ Etapa 2: Planejamento Ágil e Gerenciamento de Sprints](./02-planejamento-agil/)
 3. [🏗️ Etapa 3: Arquitetura de Infraestrutura & DevOps](./03-arquitetura-devops/)
-4. [🔐 Etapa 4: Segurança desde o Design (Shift-Left)](./04-analise-seguranca/)
-5. [🐳 Etapa 5: Implementação Prática e Conteinerização](./05-conteinerizacao/)
+4. [🔐 Etapa 4: Segurança desde o Design (Shift-Left)](./04-shift-left-e-seguranca/)
+5. [🐳 Etapa 5: Implementação Prática e Conteinerização](./05-ambientes-docker/)
 
 ---
 

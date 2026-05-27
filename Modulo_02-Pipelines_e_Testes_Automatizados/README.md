@@ -13,7 +13,7 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 
 | Laboratório | Descrição Técnica | Status | Registro |
 | :--- | :--- | :---: | :---: |
-| **Lab 2.1** | Configuração do Ambiente de Trabalho com o GitLab (Docker Server) | 🟢 Concluído | [Visualizar](./01-Introdução ao Git e GitLab/) |
+| **Lab 2.1** | Configuração do Ambiente de Trabalho com o GitLab (Docker Server) | 🟢 Concluído | [Visualizar](./01-Introdução_Git_GitLab/) |
 | **Lab 2.2** | Operação do Ambiente de Trabalho e Governança via API REST | 🟢 Concluído | [Visualizar](./02-Infraestrutura_Agil_GitLab/) |
 | **Lab 2.3** | *A definir de acordo com o cronograma do curso* | 🟡 Em Andamento | *Aguardando* |
 | **Lab 2.4** | *A definir de acordo com o cronograma do curso* | ⚪ Planejado | *Aguardando* |

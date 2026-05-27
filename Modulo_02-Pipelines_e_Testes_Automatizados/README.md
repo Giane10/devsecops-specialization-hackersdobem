@@ -1,4 +1,4 @@
-# 🧪 Laboratório 2.2: Operação do Ambiente de Trabalho e Governança no GitLab
+# 🧪 Laboratório 2.2: Infraestrutura Ágil com o GitLab 
 
 Este espaço é dedicado ao registro conceitual e documentação de aprendizados teóricos e práticos adquiridos durante o **Laboratório 2.2**, integrante do Módulo 2 da especialização em DevOps e DevSecOps (Trilha Hackers do Bem).
 

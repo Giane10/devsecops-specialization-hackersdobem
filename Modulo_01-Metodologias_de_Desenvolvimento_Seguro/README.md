@@ -4,6 +4,8 @@
 
 Bem-vindo ao repositório do **SalaSegura**! Este projeto prático foi desenvolvido como parte do **Curso de Especialização em DevSecOps** do programa **Hackers do Bem**. Aqui, documento o ciclo de vida completo de desenvolvimento, segurança e operações de um sistema web de reserva de salas, integrando os conceitos avançados absorvidos na formação desde a concepção ágil até a conteinerização.
 
+ > ⚠️ **Nota de Conformidade:** Em respeito aos critérios de integridade e ranqueamento do programa Hackers do Bem, este repositório possui finalidade estritamente de portfólio pessoal e registro de conceitos arquiteturais e metodológicos, não contendo gabaritos ou arquivos confidenciais de entrega.
+
 ---
 
 ## 🗂️ Navegação do Projeto
@@ -44,14 +46,21 @@ Clique em qualquer uma das etapas abaixo para acessar a documentação técnica 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Ferramentas Dominadas
 
-* **Programa de Formação:** Hackers do Bem (Curso de Especialização em DevSecOps)
-* **Linguagem Backend:** Go (Golang)
-* **Containers:** Docker / Docker-Compose
-* **Banco de Dados:** PostgreSQL (Previsão de persistência)
-* **Segurança:** RBAC, JWT, Criptografia TLS
-* **Metodologia:** Scrum / Secure SDLC
+<p id="tecnologias">
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/GitLab-181717?style=for-the-badge&logo=gitlab&logoColor=orange" alt="GitLab" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux CLI" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Scrum-004088?style=for-the-badge&logo=scrum&logoColor=white" alt="Scrum" />
+</p>
+
+* **Segurança Aplicada:** Modelagem de Ameaças (OWASP Top 10), Controle de Acesso Baseado em Funções (RBAC), Hashing de Senhas (BCrypt) e Estratégia Shift-Left.
+
+---
 
 ---
 

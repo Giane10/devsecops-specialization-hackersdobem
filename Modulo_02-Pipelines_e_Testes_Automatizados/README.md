@@ -1,42 +1,46 @@
-# 🧪 Laboratório 2.2: Infraestrutura Ágil com o GitLab 
 
-Este espaço é dedicado ao registro conceitual e documentação de aprendizados teóricos e práticos adquiridos durante o **Laboratório 2.2**, integrante do Módulo 2 da especialização em DevOps e DevSecOps (Trilha Hackers do Bem).
+# 🛡️ Módulo 2: Infraestrutura Ágil e Pipeline Lifecycle
 
-> ⚠️ **Nota de Conformidade:** Em respeito aos critérios de integridade e ranqueamento do programa Hackers do Bem, este repositório **não contém** arquivos de entrega, respostas de questionários, scripts internos ou relatórios de evidências das atividades práticas. Este arquivo possui finalidade estritamente de portfólio pessoal e registro de competências.
+Este repositório centraliza o registro conceitual, arquiteturas de infraestrutura e competências desenvolvidas ao longo do **Módulo 2** da especialização em DevOps e DevSecOps (Trilha Hackers do Bem).
 
----
-
-## 🎯 Objetivos do Laboratório
-O foco principal foi o estudo da administração avançada de plataformas de controle de versão, automação de acessos via API REST e a implementação prática de fluxos de ramificação estáveis (Git Flow).
+> ⚠️ **Nota de Conformidade:** Em respeito aos critérios de integridade e ranqueamento do programa Hackers do Bem, este repositório **não contém** artefatos de entrega, relatórios de evidências, respostas de questionários ou scripts internos das atividades práticas. O conteúdo possui finalidade estritamente de portfólio pessoal e registro de jornada acadêmica.
 
 ---
 
-## 🛠️ Conceitos e Ferramentas Estudados
-* **Git & GitLab Server:** Governança e arquitetura de infraestrutura de controle de versão.
-* **Linux CLI & cURL:** Automação de interações e consultas estruturadas via API REST.
-* **Git Flow:** Melhores práticas para isolamento de funcionalidades (*feature branches*) e ciclos de fusão seguros.
-* **Gestão Ágil:** Rastreabilidade de demandas e monitoramento de fluxo de trabalho através de painéis de *Issues*.
+## 🗺️ Mapa do Módulo e Status de Execução
+
+Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de seus respectivos status de conclusão e links para os registros conceituais detalhados:
+
+| Laboratório | Descrição Técnica | Status | Registro |
+| :--- | :--- | :---: | :---: |
+| **Lab 2.1** | Configuração do Ambiente de Trabalho com o GitLab (Docker Server) | 🟢 Concluído | [Visualizar](./01-gitlab-server-docker/) |
+| **Lab 2.2** | Operação do Ambiente de Trabalho e Governança via API REST | 🟢 Concluído | [Visualizar](./02-gitlab-operation-and-agile/) |
+| **Lab 2.3** | *A definir de acordo com o cronograma do curso* | 🟡 Em Andamento | *Aguardando* |
+| **Lab 2.4** | *A definir de acordo com o cronograma do curso* | ⚪ Planejado | *Aguardando* |
+| **Lab 2.5** | *A definir de acordo com o cronograma do curso* | ⚪ Planejado | *Aguardando* |
 
 ---
 
-## 🚀 Competências Desenvolvidas
+## 🚀 Resumo das Competências Consolidadas
 
-1. **Automação de Governança via API (CLI):**
-   * Compreensão teórica e prática do uso do utilitário `curl` para realizar requisições `GET` e `PUT` nos *endpoints* da API do GitLab.
-   * Estudo sobre gerenciamento de controle de acesso baseado em funções (RBAC) e auditoria de identidades/permissões via linha de comando.
+### 🐳 [Lab 2.1] Configuração de Infraestrutura e Gerenciamento Base
+* **Provisionamento Isolado:** Estudo da arquitetura e inicialização de um servidor completo do GitLab Server utilizando contêineres Docker para isolamento de ambiente.
+* **Governança Inicial e RBAC:** Administração via interface gráfica (GUI) e linha de comando (CLI) para criação de grupos, provisionamento de usuários de teste e estabelecimento de papéis hierárquicos (*Maintainer*).
 
-2. **Gerenciamento de Ciclo de Trabalho Estável (Git Flow):**
-   * Prática de isolamento de escopo técnico com a criação de ramificações secundárias (`feature branches`).
-   * Consolidação de conceitos de integridade de código ao realizar fusões (*merges*) e sincronizações remotas via `git push` mantendo a estabilidade da branch principal.
-
-3. **Auditoria e Histórico Visual:**
-   * Visualização estruturada da árvore cronológica do projeto utilizando ferramentas CLI de mapeamento gráfico (`git log --graph`).
-
-4. **Cultura Ágil e Organização de Demandas:**
-   * Utilização de ecossistemas integrados de *Issues* para triagem, documentação e acompanhamento do progresso de tarefas dentro de um time de engenharia.
+### 🧪 [Lab 2.2] Operação Avançada e Automação de Governança
+* **Administração via API REST:** Utilização do utilitário `curl` para consultas e alterações de permissões de acesso diretamente pela CLI através de requisições `GET` e `PUT`.
+* **Maturidade de Desenvolvimento (Git Flow):** Implementação prática de estratégias de ramificação estáveis, utilizando *feature branches* (`feature01`) para isolamento de escopo técnico e execução de fusões (*merge*) seguras na branch principal.
+* **Cultura Ágil:** Rastreabilidade de demandas e gerenciamento visual de tarefas integrado através de ecossistemas de *Issues*.
 
 ---
 
-## 📑 Conclusão
-A atividade consolidou a visão estratégica de que o GitLab atua como uma plataforma centralizadora de automação, segurança e colaboração. O domínio de interações via API REST e a maturidade no uso do Git Flow são fundamentais para garantir entregas contínuas eficientes, organizadas e em total conformidade com os requisitos de segurança do mercado.
+## 🛠️ Tecnologias Dominadas neste Módulo
+<p id="tecnologias">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/GitLab-181717?style=for-the-badge&logo=gitlab&logoColor=orange" alt="GitLab" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux CLI" />
+</p>
 
+---
+*Este repositório é um portfólio dinâmico e está em constante construção de acordo com o avanço cronológico das aulas e liberação dos módulos.*

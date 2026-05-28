@@ -10,7 +10,7 @@ Configuração prática de um pipeline de CI/CD (Integração Contínua e Entreg
 * **Go (Golang):** Linguagem de programação da aplicação de exemplo.
 
 ## 📋 Etapas do Laboratório
-- [ ] Passo 1: Preparação do Ambiente e Registro do GitLab Runner
+- [x] Passo 1: Preparação do Ambiente e Registro do GitLab Runner
 - [ ] Passo 2: Preparação do Build (Dockerfile e código Go)
 - [ ] Passo 3: Configuração do Pipeline Básico (.gitlab-ci.yml)
 - [ ] Passo 4: Configuração do Deploy Automatizado

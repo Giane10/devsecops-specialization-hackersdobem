@@ -16,7 +16,7 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 | **Lab 2.1** | Configuração do Ambiente de Trabalho com o GitLab (Docker Server) | 🟢 Concluído | [Visualizar](./01-Introdução_Git_GitLab/) |
 | **Lab 2.2** | Operação do Ambiente de Trabalho e Governança via API REST | 🟢 Concluído | [Visualizar](./02-Infraestrutura_Agil_GitLab/) |
 | Lab 2.3 | Controle de Versão, Tags e Resolução de Conflitos no GitLab | 🟢 Concluído | [Visualizar](./03-Controle_de_Versao_e_Conflitos/) |
-| **Lab 2.4** | *A definir de acordo com o cronograma do curso* | ⚪ Planejado | *Aguardando* |
+| **Lab 2.4** | Criação e Configuração de Pipelines de CI/CD no GitLab | 🟡 Em Andamento | [Visualizar](./04-Pipelines_e_Integracao_Continua/) |
 | **Lab 2.5** | *A definir de acordo com o cronograma do curso* | ⚪ Planejado | *Aguardando* |
 
 ---
@@ -36,6 +36,12 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 * **Ciclo de Vida de Releases (Tags):** Estudo e criação de ponteiros imutáveis (`git tag`) para congelar e documentar versões estáveis de software, garantindo a rastreabilidade e rollback seguro de builds.
 * **Resolução Estrutural Concorrente (Merge & Rebase):** Análise e tratamento manual de divergências e conflitos de código na mesma linha de arquivos concorrentes, compreendendo o impacto do `git merge` na preservação do histórico e do `git rebase` na linearização de commits.
 * **Gerenciamento de Contexto Efêmero (Stash):** Aplicação prática do mecanismo de empilhamento (`git stash`) para isolamento temporário de modificações em andamento, mitigando bloqueios de transição de branches no terminal.
+
+### 🚀 [Lab 2.4] Pipelines e Integração Contínua (CI/CD)
+* **Provisionamento de Runners:** Implantação e gerenciamento de um agente isolado de execução (`gitlab-runner`) integrado via contêiner Docker (`docker-compose`).
+* **Automação de Pipelines (`.gitlab-ci.yml`):** Estruturação de esteiras automatizadas divididas em estágios críticos de ciclo de vida (`build`, `test`, `deploy`), garantindo a compilação isolada de artefatos.
+* **Garantia de Qualidade (Quality Assurance):** Implementação de jobs de testes automatizados com relatórios de cobertura de código (*coverage*) nativos na esteira.
+* **Ciclo de Deploy Automatizado:** Configuração de entrega e substituição automatizada de instâncias de aplicação em ambiente de teste com gerenciamento de portas e contêineres antigos via shell script.
 
 ---
 

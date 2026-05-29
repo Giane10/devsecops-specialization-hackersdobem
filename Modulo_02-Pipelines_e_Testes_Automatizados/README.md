@@ -16,7 +16,7 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 | **Lab 2.1** | Configuração do Ambiente de Trabalho com o GitLab (Docker Server) | 🟢 Concluído | [Visualizar](./01-Introdução_Git_GitLab/) |
 | **Lab 2.2** | Operação do Ambiente de Trabalho e Governança via API REST | 🟢 Concluído | [Visualizar](./02-Infraestrutura_Agil_GitLab/) |
 | Lab 2.3 | Controle de Versão, Tags e Resolução de Conflitos no GitLab | 🟢 Concluído | [Visualizar](./03-Controle_de_Versao_e_Conflitos/) |
-| **Lab 2.4** | Criação e Configuração de Pipelines de CI/CD no GitLab | 🟡 Em Andamento | [Visualizar](./04-Pipelines_e_Integracao_Continua/) |
+| **Lab 2.4** | Criação e Configuração de Pipelines de CI/CD no GitLab | 🟢 Concluído | [Visualizar](./04-Pipelines_e_Integracao_Continua/) |
 | **Lab 2.5** | *A definir de acordo com o cronograma do curso* | ⚪ Planejado | *Aguardando* |
 
 ---
@@ -39,9 +39,10 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 
 ### 🚀 [Lab 2.4] Pipelines e Integração Contínua (CI/CD)
 * **Provisionamento de Runners:** Implantação e gerenciamento de um agente isolado de execução (`gitlab-runner`) integrado via contêiner Docker (`docker-compose`).
-* **Automação de Pipelines (`.gitlab-ci.yml`):** Estruturação de esteiras automatizadas divididas em estágios críticos de ciclo de vida (`build`, `test`, `deploy`), garantindo a compilação isolada de artefatos.
-* **Garantia de Qualidade (Quality Assurance):** Implementação de jobs de testes automatizados com relatórios de cobertura de código (*coverage*) nativos na esteira.
-* **Ciclo de Deploy Automatizado:** Configuração de entrega e substituição automatizada de instâncias de aplicação em ambiente de teste com gerenciamento de portas e contêineres antigos via shell script.
+* **Automação de Pipelines (`.gitlab-ci.yml`):** Estruturação de esteiras automatizadas divididas em estágios críticos de ciclo de vida (`build`, `test`, `deploy`), garantindo a compilação isolada de artefatos (Pipeline as Code).
+* **Garantia de Qualidade (QA):** Implementação de jobs de testes automatizados com relatórios de cobertura de código (*coverage*) nativos na esteira para validação da aplicação em Go.
+* **Ciclo de Deploy e Gerenciamento de Infraestrutura:** Configuração de entrega contínua com substituição automatizada de instâncias e mitigação proativa de conflitos de rede, adaptando o mapeamento de portas do contêiner para `8081` de forma a isolar o tráfego dos serviços nativos do GitLab.
+* **Segurança na Autenticação:** Uso prático de *Personal Access Tokens* (`glpat-`) como boas práticas de DevSecOps para tráfego e push seguro de código via CLI.
 
 ---
 
@@ -55,3 +56,5 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 
 ---
 *Este repositório é um portfólio dinâmico e está em constante construção de acordo com o avanço cronológico das aulas e liberação dos módulos.*
+
+

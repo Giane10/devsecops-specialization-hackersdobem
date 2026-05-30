@@ -17,7 +17,7 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 | **Lab 2.2** | Operação do Ambiente de Trabalho e Governança via API REST | 🟢 Concluído | [Visualizar](./02-Infraestrutura_Agil_GitLab/) |
 | Lab 2.3 | Controle de Versão, Tags e Resolução de Conflitos no GitLab | 🟢 Concluído | [Visualizar](./03-Controle_de_Versao_e_Conflitos/) |
 | **Lab 2.4** | Criação e Configuração de Pipelines de CI/CD no GitLab | 🟢 Concluído | [Visualizar](./04-Pipelines_e_Integracao_Continua/) |
-| **Lab 2.5** | *A definir de acordo com o cronograma do curso* | ⚪ Planejado | *Aguardando* |
+| **Lab 2.5** | Testes Automatizados, Cobertura e Análise Estática de Segurança (SAST) | 🟢 Concluído | [Visualizar](./05-Testes_Automatizados_e_SonarQube/) |
 
 ---
 
@@ -44,12 +44,21 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 * **Ciclo de Deploy e Gerenciamento de Infraestrutura:** Configuração de entrega contínua com substituição automatizada de instâncias e mitigação proativa de conflitos de rede, adaptando o mapeamento de portas do contêiner para `8081` de forma a isolar o tráfego dos serviços nativos do GitLab.
 * **Segurança na Autenticação:** Uso prático de *Personal Access Tokens* (`glpat-`) como boas práticas de DevSecOps para tráfego e push seguro de código via CLI.
 
+### 🛡️ [Lab 2.5] Testes Automatizados e Análise de Segurança (SAST)
+* **Importância Estratégica da Automação:** Consolidação dos conceitos de testes integrados à esteira de CI/CD para identificação precoce de falhas (Shift-Left Testing) e estabilidade de deploys.
+* **Métricas Reais de Cobertura (Coverage):** Criação e execução de suítes de testes unitários automatizados (`main_test.go`) em Go, atingindo um índice real de **90.9% de cobertura** validada via pipeline.
+* **Auditoria de Segurança Dinâmica (SonarQube):** Integração do Sonar Scanner com o servidor através do `sonar-project.properties`, estabelecendo barreiras automáticas de qualidade (*Quality Gates*).
+* **Análise Preditiva de Vulnerabilidades (Docker Hardening):** Interpretação de alertas de painel (*Security Hotspots*), identificando riscos de elevação de privilégios relacionados ao uso de usuário `root` no `Dockerfile`, visando o endurecimento (*hardening*) da segurança de contêineres.
+* **Gerenciamento de Débito Técnico:** Avaliação avançada de indicadores estruturais (aba *Measures*), fechando o ciclo de desenvolvimento com o índice de débito técnico e bugs zerado.
+
 ---
 
 ## 🛠️ Tecnologias Dominadas neste Módulo
 <p id="tecnologias">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/GitLab-181717?style=for-the-badge&logo=gitlab&logoColor=orange" alt="GitLab" />
+  <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white" alt="SonarQube" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux CLI" />
 </p>

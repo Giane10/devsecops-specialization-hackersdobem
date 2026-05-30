@@ -38,4 +38,4 @@ Após a execução bem-sucedida da esteira (Pipeline #6), o SonarQube gerou os s
 - `sonar-project.properties`: Arquivo de propriedades responsável por mapear as chaves do projeto e tokens de autenticação com o servidor SonarQube.
 
 ---
-*Projeto desenvolvido para fins acadêmicos na UNINTER como evidência prática do Módulo 2.*
+*Projeto desenvolvido para fins acadêmicos como evidência prática do Módulo 2.*

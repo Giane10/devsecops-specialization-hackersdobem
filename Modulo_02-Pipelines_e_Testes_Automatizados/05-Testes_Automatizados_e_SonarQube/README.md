@@ -37,5 +37,20 @@ Após a execução bem-sucedida da esteira (Pipeline #6), o SonarQube gerou os s
 - `.gitlab-ci.yml`: Script de automação que define o comportamento de todos os estágios do pipeline.
 - `sonar-project.properties`: Arquivo de propriedades responsável por mapear as chaves do projeto e tokens de autenticação com o servidor SonarQube.
 
+
+
+## 🛑 Análise Pós-Laboratório (Atividade 2.5)
+
+> **Insight de SecOps e Maturidade Técnica:**
+> Ao concluir a integração do SonarQube com o GitLab para análise estática de código (SAST), fechei o ciclo de automação alcançando **90.9% de cobertura de testes**. O insight mais valioso dessa etapa foi ver a segurança funcionar na prática: a própria ferramenta gerou um alerta (*Security Hotspot*) confirmando o risco que eu já suspeitava no `Dockerfile` — a execução de contêineres como usuário `root`. 
+
+Além disso, identifiquei pontos críticos que diferenciam este laboratório didático de um cenário corporativo real e seguro:
+
+* **Exposição de Credenciais:** Jamais deveríamos salvar o token de análise em texto claro no arquivo `sonar-project.properties`. O verdadeiro DevSecOps exige mover esses segredos para as variáveis mascaradas (*CI/CD Variables*) do GitLab.
+* **Isolamento de Infraestrutura:** Devemos evitar ao máximo o uso de contêineres em modo privilegiado (`privileged=true`) no Runner, garantindo o isolamento total da infraestrutura local e mitigando riscos de *Container Escape*.
+
+O foco do DevSecOps não é apenas fazer o pipeline passar, mas garantir que o código rode com privilégio mínimo e segredos trancados no cofre! 🛡️
+
 ---
+
 *Projeto desenvolvido para fins acadêmicos como evidência prática do Módulo 2.*

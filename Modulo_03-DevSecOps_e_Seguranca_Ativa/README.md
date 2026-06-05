@@ -13,7 +13,7 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 | Laboratório | Descrição Técnica | Status | Registro |
 | :--- | :--- | :---: | :---: |
 | **Lab 3.1** | Introdução ao DevSecOps, Auditoria Trivy e Otimização de Imagens | 🟢 Concluído | [Visualizar](./01-introducao-devsecops/) |
-| Lab 3.2 | Segurança de Software e Análise de Vulnerabilidade | 🟡 Em andamento | [Visualizar](./02-seguranca-software-vulnerabilidade/) |
+| Lab 3.2 | Segurança de Software e Análise de Vulnerabilidade | 🟢 Concluído | [Visualizar](./02-seguranca-software-vulnerabilidade/) |
 | Lab 3.3 | Desenvolvimento Seguro e Automação de Tarefas de Segurança | ⚪ Brevemente | [Visualizar](./03-desenvolvimento-seguro-automacao/) |
 | Lab 3.4 | Monitoramento Contínuo e Resposta a Incidentes em DevSecOps — Parte 1 | ⚪ Brevemente | [Visualizar](./04-monitoramento-continuo-incidentes-p1/) |
 | Lab 3.5 | Monitoramento Contínuo e Resposta a Incidentes em DevSecOps — Parte 2 | ⚪ Brevemente | [Visualizar](./05-monitoramento-continuo-incidentes-p2/) |
@@ -30,12 +30,18 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 * **Orquestração e Security Gates em CI/CD:** Automação e integração de pipelines de segurança no GitLab CI/CD através do arquivo `.gitlab-ci.yml`. Implementação prática de políticas estritas de bloqueio (*exit-code* ativo) para barrar deploys de códigos vulneráveis em produção e posterior normalização do fluxo.
 
 ### 🔬 [Lab 3.2] Segurança de Software e Análise de Vulnerabilidade
-* *Resumo técnico das competências em consolidação de acordo com o progresso das aulas práticas desta unidade.*
+* **Orquestração de Containers de Segurança:** Gerenciamento e inicialização prática de infraestrutura local via Docker CLI, controlando o ciclo de vida e a conectividade de serviços integrados (SonarQube, GitLab e PostgreSQL).
+* **Análise Estática de Segurança (SAST):** Exploração profunda da interface do SonarQube para triagem e classificação de achados de segurança em aplicações Go, diferenciando falhas lógicas (Bugs), manutenibilidade de código (Code Smells) e vulnerabilidades potenciais (Security Hotspots).
+* **Políticas de Qualidade Customizadas:** Criação e extensão de um *Quality Profile* personalizado (denominado HDB) a partir do modelo padrão, realizando o acoplamento exclusivo do projeto analisado a uma nova governança de segurança.
+* **Customização de Regras e Defesa Proativa:** Ativação manual de regras críticas de fluxo condicional estrutural (validações estritas de blocos `if/else` e cláusulas `default` em estruturas `switch`), com documentação de justificativas técnicas focadas em mitigar brechas e comportamentos imprevisíveis no software.
+* **Análise de Composição de Software (SCA) via Marketplace:** Exploração do ecossistema de extensões do SonarQube, homologando o processo de localização, instalação e gerenciamento do plugin OWASP Dependency-Check para auditoria de componentes e bibliotecas de terceiros.
 
 ---
 
 ## 🛠️ Tecnologias Dominadas neste Módulo
 <p id="tecnologias">
+  <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white" alt="SonarQube" />
+  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
   <img src="https://img.shields.io/badge/Trivy-460BF2?style=for-the-badge&logo=trivy&logoColor=white" alt="Trivy" />
   <img src="https://img.shields.io/badge/Docker_Slim-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Slim" />
   <img src="https://img.shields.io/badge/GitLab_CI/CD-181717?style=for-the-badge&logo=gitlab&logoColor=orange" alt="GitLab CI/CD" />

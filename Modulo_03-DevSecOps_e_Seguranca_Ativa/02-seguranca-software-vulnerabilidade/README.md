@@ -14,6 +14,14 @@ O propósito deste laboratório foi implementar um fluxo de governança de segur
 
 ---
 
+## 📊 Infográfico Resumo do Aprendizado
+
+<p align="center">
+  <img src="./infografico1.png" alt="Tríade do SonarQube" width="100%">
+  <img src="./infografico2.png" alt="Governança e Hardening" width="100%">
+  <img src="./infografico3.png" alt="SCA e Conclusão" width="100%">
+</p>
+
 ## 🏗️ Arquitetura do Ambiente Local
 
 Para a execução dos testes, foi orquestrado um ambiente multifuncional baseado em contêineres Docker independentes, garantindo o isolamento e a comunicação dos seguintes serviços:

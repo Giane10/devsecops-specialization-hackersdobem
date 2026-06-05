@@ -2,7 +2,7 @@
 
 Este repositório centraliza o registro conceitual, arquiteturas de infraestrutura e competências desenvolvidas ao longo do **Módulo 3** da especialização em DevOps e DevSecOps (Trilha Hackers do Bem).
 
-> ⚠️ **Nota de Conformidade:** Em respeito aos critérios de integridade e ranqueamento do programa Hackers do Bem, este repositório **não contém** artefatos de entrega, relatórios de evidências, respostas de questionários ou scripts internos das atividades práticas. O conteúdo possui finalidade estritamente de portfólio pessoal e registro de jornada acadêmica.
+> ⚠️ **Nota de Conformidade:** Em respeito aos critérios de integridade e ranqueamento do programa Hackers do Bem, este repositório **não contém** artefatos de entrega, relatórios de evidências, respostas de questionários ou scripts internos das atividades práticas. O conteúdo possui finalidade estritamente de portfólio pessoal e registro de jornada academicas.
 
 ---
 
@@ -13,8 +13,8 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 | Laboratório | Descrição Técnica | Status | Registro |
 | :--- | :--- | :---: | :---: |
 | **Lab 3.1** | Introdução ao DevSecOps, Auditoria Trivy e Otimização de Imagens | 🟢 Concluído | [Visualizar](./01-introducao-devsecops/) |
-| Lab 3.2 | Segurança de Software e Análise de Vulnerabilidade | 🟢 Concluído | [Visualizar](./02-seguranca-software-vulnerabilidade/) |
-| Lab 3.3 | Desenvolvimento Seguro e Automação de Tarefas de Segurança | ⚪ Brevemente | [Visualizar](./03-desenvolvimento-seguro-automacao/) |
+| **Lab 3.2** | Segurança de Software e Análise de Vulnerabilidade | 🟢 Concluído | [Visualizar](./02-seguranca-software-vulnerabilidade/) |
+| **Lab 3.3** | Desenvolvimento Seguro e Automação de Tarefas de Segurança | 🟢 Concluído | [Visualizar](./03-desenvolvimento-seguro-automacao/) |
 | Lab 3.4 | Monitoramento Contínuo e Resposta a Incidentes em DevSecOps — Parte 1 | ⚪ Brevemente | [Visualizar](./04-monitoramento-continuo-incidentes-p1/) |
 | Lab 3.5 | Monitoramento Contínuo e Resposta a Incidentes em DevSecOps — Parte 2 | ⚪ Brevemente | [Visualizar](./05-monitoramento-continuo-incidentes-p2/) |
 
@@ -26,7 +26,7 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 * **Cultura Shift-Left e Auditoria Manual:** Implementação prática de verificação estática de segurança (SCA) na imagem base Go utilizando a ferramenta Trivy. Diagnóstico e resolução de contenção física de armazenamento em disco dentro do ambiente da VM para viabilizar as rotinas de scanner.
 * **Documentação e Engenharia de Relatórios:** Geração estruturada de arquivos de histórico em tempo real (`trivy_report.txt`, `trivy_severity_report.txt`, `trivy_package_report.txt` e `trivy_license_report.txt`), funcionando como fotografias de segurança e artefatos de conformidade para desenvolvedores e auditorias futuras.
 * **Análise Crítica de Ameaças (CVE):** Investigação e desmembramento técnico da falha de severidade ALTA **CVE-2026-39820** no painel do NVD (National Vulnerability Database), compreendendo o vetor de ataque de Negação de Serviço (DoS) por esgotamento de CPU e alocação de memória em funções de parsing de strings em Go.
-* **Redução Drástica de Superfície de Ataque:** Aplicação de engenharia reversa via **Docker Slim** para otimização de infraestrutura imutável, alcançando a redução real e enxuta do footprint do contêiner de **896MB para 9.74MB**, eliminando dependências e binários supérfluos.
+* **Redução Drástica de Superfície de Ataque:** Aplicando engenharia reversa via **Docker Slim** para otimização de infraestrutura imutável, alcançando a redução real e enxuta do footprint do contêiner de **896MB para 9.74MB**, eliminando dependências e binários supérfluos.
 * **Orquestração e Security Gates em CI/CD:** Automação e integração de pipelines de segurança no GitLab CI/CD através do arquivo `.gitlab-ci.yml`. Implementação prática de políticas estritas de bloqueio (*exit-code* ativo) para barrar deploys de códigos vulneráveis em produção e posterior normalização do fluxo.
 
 ### 🔬 [Lab 3.2] Segurança de Software e Análise de Vulnerabilidade
@@ -35,6 +35,13 @@ Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de
 * **Políticas de Qualidade Customizadas:** Criação e extensão de um *Quality Profile* personalizado (denominado HDB) a partir do modelo padrão, realizando o acoplamento exclusivo do projeto analisado a uma nova governança de segurança.
 * **Customização de Regras e Defesa Proativa:** Ativação manual de regras críticas de fluxo condicional estrutural (validações estritas de blocos `if/else` e cláusulas `default` em estruturas `switch`), com documentação de justificativas técnicas focadas em mitigar brechas e comportamentos imprevisíveis no software.
 * **Análise de Composição de Software (SCA) via Marketplace:** Exploração do ecossistema de extensões do SonarQube, homologando o processo de localização, instalação e gerenciamento do plugin OWASP Dependency-Check para auditoria de componentes e bibliotecas de terceiros.
+
+### ⚙️ [Lab 3.3] Desenvolvimento Seguro e Automação de Tarefas de Segurança
+* **Triagem Avançada de Código com Foco em SAST:** Execução de revisões criteriosas por meio do filtro de Security Hotspots no SonarQube, compreendendo os impactos de credenciais fixas (hard-coded) e exposição indesejada de endereços IP locais em aplicações desenvolvidas em Go.
+* **Governança de Plugins e Análise de Composição de Software (SCA):** Instalação, ativação e parametrização avançada do plugin OWASP Dependency-Check no servidor de monitoramento de código, habilitando regras estritas para rastreamento global de caminhos e sumários.
+* **Expansão de Segurança em Pipelines Multi-Estágio:** Integração automatizada da ferramenta de verificação de dependências no arquivo `.gitlab-ci.yml` adicionando um novo estágio sequencial de testes (`test4`) com o uso de imagem conteneirizada estável.
+* **Sincronização Automatizada de Relatórios Transmídias:** Parametrização no arquivo `sonar-project.properties` para instruir o injetor a consolidar relatórios estruturados de vulnerabilidade de terceiros nos formatos HTML, XML e JSON de forma unificada.
+* **Resiliência na Gestão de Infraestrutura de Contêineres:** Resolução prática de contenção de recursos físicos locais através de triagem manual e encerramento de processos secundários do host, contornando sobrecargas na VM causadas pela concorrência entre serviços do pipeline.
 
 ---
 

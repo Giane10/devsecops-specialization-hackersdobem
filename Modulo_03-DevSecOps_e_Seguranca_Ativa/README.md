@@ -1,61 +1,44 @@
 # 🛡️ Módulo 3: DevSecOps e Segurança Ativa
 
-Este repositório centraliza o registro conceitual, arquiteturas de infraestrutura e competências desenvolvidas ao longo do **Módulo 3** da especialização em DevOps e DevSecOps (Trilha Hackers do Bem).
+Este repositório centraliza o registro da jornada de aprendizado no Módulo 3 da especialização em DevOps e DevSecOps (Trilha Hackers do Bem).
 
-> ⚠️ **Nota de Conformidade:** Em respeito aos critérios de integridade e ranqueamento do programa Hackers do Bem, este repositório **não contém** artefatos de entrega, relatórios de evidências, respostas de questionários ou scripts internos das atividades práticas. O conteúdo possui finalidade estritamente de portfólio pessoal e registro de jornada academicas.
+> ⚠️ **Nota de Conformidade:** Este repositório contém apenas registros conceituais e lições aprendidas, respeitando as políticas do programa.
 
 ---
 
 ## 🗺️ Mapa do Módulo e Status de Execução
 
-Abaixo estão listados os laboratórios práticos deste módulo, acompanhados de seus respectivos status de conclusão e links para os registros conceituais detalhados:
-
-| Laboratório | Descrição Técnica | Status | Registro |
+| Laboratório | Descrição Técnica | Status | Registro Detalhado |
 | :--- | :--- | :---: | :---: |
-| **Lab 3.1** | Introdução ao DevSecOps, Auditoria Trivy e Otimização de Imagens | 🟢 Concluído | [Visualizar](./01-introducao-devsecops/) |
+| **Lab 3.1** | Introdução ao DevSecOps, Auditoria Trivy e Otimização | 🟢 Concluído | [Visualizar](./01-introducao-devsecops/) |
 | **Lab 3.2** | Segurança de Software e Análise de Vulnerabilidade | 🟢 Concluído | [Visualizar](./02-seguranca-software-vulnerabilidade/) |
-| **Lab 3.3** | Desenvolvimento Seguro e Automação de Tarefas de Segurança | 🟢 Concluído | [Visualizar](./03-desenvolvimento-seguro-automacao/) |
-| Lab 3.4 | Monitoramento Contínuo e Resposta a Incidentes em DevSecOps — Parte 1 | ⚪ Brevemente | [Visualizar](./04-monitoramento-continuo-incidentes-p1/) |
-| Lab 3.5 | Monitoramento Contínuo e Resposta a Incidentes em DevSecOps — Parte 2 | ⚪ Brevemente | [Visualizar](./05-monitoramento-continuo-incidentes-p2/) |
+| **Lab 3.3** | Desenvolvimento Seguro e Automação de Segurança | 🟢 Concluído | [Visualizar](./03-desenvolvimento-seguro-automacao/) |
+| **Lab 3.4** | Monitoramento Contínuo e Resposta a Incidentes (P1) | 🟢 Concluído | [Visualizar](./04-monitoramento-continuo-incidentes-p1/) |
+| Lab 3.5 | Monitoramento Contínuo e Resposta a Incidentes (P2) | ⚪ Brevemente | [Visualizar](./05-monitoramento-continuo-incidentes-p2/) |
 
 ---
 
-## 🚀 Resumo das Competências Consolidadas
+## 🚀 Resumo das Competências (Visão Geral)
 
-### 🛡️ [Lab 3.1] Introdução ao DevSecOps, Auditoria Trivy e Otimização de Imagens
-* **Cultura Shift-Left e Auditoria Manual:** Implementação prática de verificação estática de segurança (SCA) na imagem base Go utilizando a ferramenta Trivy. Diagnóstico e resolução de contenção física de armazenamento em disco dentro do ambiente da VM para viabilizar as rotinas de scanner.
-* **Documentação e Engenharia de Relatórios:** Geração estruturada de arquivos de histórico em tempo real (`trivy_report.txt`, `trivy_severity_report.txt`, `trivy_package_report.txt` e `trivy_license_report.txt`), funcionando como fotografias de segurança e artefatos de conformidade para desenvolvedores e auditorias futuras.
-* **Análise Crítica de Ameaças (CVE):** Investigação e desmembramento técnico da falha de severidade ALTA **CVE-2026-39820** no painel do NVD (National Vulnerability Database), compreendendo o vetor de ataque de Negação de Serviço (DoS) por esgotamento de CPU e alocação de memória em funções de parsing de strings em Go.
-* **Redução Drástica de Superfície de Ataque:** Aplicando engenharia reversa via **Docker Slim** para otimização de infraestrutura imutável, alcançando a redução real e enxuta do footprint do contêiner de **896MB para 9.74MB**, eliminando dependências e binários supérfluos.
-* **Orquestração e Security Gates em CI/CD:** Automação e integração de pipelines de segurança no GitLab CI/CD através do arquivo `.gitlab-ci.yml`. Implementação prática de políticas estritas de bloqueio (*exit-code* ativo) para barrar deploys de códigos vulneráveis em produção e posterior normalização do fluxo.
+* **[Lab 3.1] Auditoria e Otimização:** Foco na cultura *Shift-Left*, utilização do Trivy para auditoria de imagens e técnicas de otimização de infraestrutura imutável (Docker Slim).
+* **[Lab 3.2] SAST e Qualidade de Código:** Orquestração de serviços de segurança (SonarQube), criação de *Quality Profiles* customizados e governança de políticas de código.
+* **[Lab 3.3] Automação em CI/CD:** Integração de esteiras (GitLab CI/CD), implementação de SCA (OWASP Dependency-Check) e resiliência na gestão de infraestrutura local.
+* **[Lab 3.4] Observabilidade:** Instrumentação de aplicações Go, implementação de *stack* de monitoramento com Prometheus/Grafana e estratégia de resposta a incidentes.
 
-### 🔬 [Lab 3.2] Segurança de Software e Análise de Vulnerabilidade
-* **Orquestração de Containers de Segurança:** Gerenciamento e inicialização prática de infraestrutura local via Docker CLI, controlando o ciclo de vida e a conectividade de serviços integrados (SonarQube, GitLab e PostgreSQL).
-* **Análise Estática de Segurança (SAST):** Exploração profunda da interface do SonarQube para triagem e classificação de achados de segurança em aplicações Go, diferenciando falhas lógicas (Bugs), manutenibilidade de código (Code Smells) e vulnerabilidades potenciais (Security Hotspots).
-* **Políticas de Qualidade Customizadas:** Criação e extensão de um *Quality Profile* personalizado (denominado HDB) a partir do modelo padrão, realizando o acoplamento exclusivo do projeto analisado a uma nova governança de segurança.
-* **Customização de Regras e Defesa Proativa:** Ativação manual de regras críticas de fluxo condicional estrutural (validações estritas de blocos `if/else` e cláusulas `default` em estruturas `switch`), com documentação de justificativas técnicas focadas em mitigar brechas e comportamentos imprevisíveis no software.
-* **Análise de Composição de Software (SCA) via Marketplace:** Exploração do ecossistema de extensões do SonarQube, homologando o processo de localização, instalação e gerenciamento do plugin OWASP Dependency-Check para auditoria de componentes e bibliotecas de terceiros.
-
-### ⚙️ [Lab 3.3] Desenvolvimento Seguro e Automação de Tarefas de Segurança
-* **Triagem Avançada de Código com Foco em SAST:** Execução de revisões criteriosas por meio do filtro de Security Hotspots no SonarQube, compreendendo os impactos de credenciais fixas (hard-coded) e exposição indesejada de endereços IP locais em aplicações desenvolvidas em Go.
-* **Governança de Plugins e Análise de Composição de Software (SCA):** Instalação, ativação e parametrização avançada do plugin OWASP Dependency-Check no servidor de monitoramento de código, habilitando regras estritas para rastreamento global de caminhos e sumários.
-* **Expansão de Segurança em Pipelines Multi-Estágio:** Integração automatizada da ferramenta de verificação de dependências no arquivo `.gitlab-ci.yml` adicionando um novo estágio sequencial de testes (`test4`) com o uso de imagem conteneirizada estável.
-* **Sincronização Automatizada de Relatórios Transmídias:** Parametrização no arquivo `sonar-project.properties` para instruir o injetor a consolidar relatórios estruturados de vulnerabilidade de terceiros nos formatos HTML, XML e JSON de forma unificada.
-* **Resiliência na Gestão de Infraestrutura de Contêineres:** Resolução prática de contenção de recursos físicos locais através de triagem manual e encerramento de processos secundários do host, contornando sobrecargas na VM causadas pela concorrência entre serviços do pipeline.
+*(Para detalhes técnicos, comandos e troubleshooting de cada lab, acesse o link no Mapa do Módulo acima.)*
 
 ---
 
-## 🛠️ Tecnologias Dominadas neste Módulo
+## 🛠️ Tecnologias Dominadas
 <p id="tecnologias">
-  <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white" alt="SonarQube" />
-  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
-  <img src="https://img.shields.io/badge/Trivy-460BF2?style=for-the-badge&logo=trivy&logoColor=white" alt="Trivy" />
-  <img src="https://img.shields.io/badge/Docker_Slim-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Slim" />
-  <img src="https://img.shields.io/badge/GitLab_CI/CD-181717?style=for-the-badge&logo=gitlab&logoColor=orange" alt="GitLab CI/CD" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux CLI" />
+  <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white" />
+  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitLab_CI/CD-181717?style=for-the-badge&logo=gitlab&logoColor=orange" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
 </p>
 
 ---
-*Este repositório é um portfólio dinâmico e está em constante construção de acordo com o avanço cronológico das aulas e liberação dos módulos.*
+*Este repositório é um portfólio dinâmico, em constante evolução.*

@@ -38,10 +38,15 @@ Este repositório armazena o registro conceitual e o mapeamento de competências
 
 ---
 
-## 🧠 Nota de Resiliência e Infraestrutura (Bastidores do Lab)
-Trabalhar com infraestrutura ágil em ambientes locais demonstra que o desafio vai muito além do código de segurança. Durante a execução deste laboratório, a orquestração simultânea de múltiplos contêineres pesados em execução em segundo plano no Docker (como o motor do SonarQube, o banco PostgreSQL e a instância local do GitLab) provocou gargalos físicos e o travamento temporário da Máquina Virtual (VM).
+## 🧠 Desafios de Infraestrutura e Troubleshooting
+A execução deste laboratório foi um exercício de resiliência técnica que extrapolou a configuração de segurança. A orquestração local de múltiplos contêineres Docker (SonarQube, PostgreSQL e GitLab) impôs limitações severas de hardware à máquina virtual.
 
-A resolução não exigiu apenas o conhecimento dos comandos técnicos, mas paciência e troubleshooting consultivo: o controle manual de janelas ativas, o encerramento planejado de abas redundantes do navegador web e a administração cadenciada dos tempos de resposta do sistema garantiram que todo o ambiente se estabilizasse, permitindo coletar com sucesso todas as evidências visuais necessárias e consolidar o aprendizado prático em sua totalidade. No fim, o valor real está no conhecimento assimilado para proteger sistemas no mundo real.
+**Lições aprendidas no Troubleshooting:**
+* **Gestão de Recursos:** A necessidade de monitorar e otimizar o consumo de memória da VM foi essencial para manter a estabilidade dos serviços.
+* **Resiliência operacional:** O fluxo de trabalho foi interrompido por erros de sintaxe YAML, caracteres invisíveis e o encerramento do tempo limite do laboratório (timeout) durante o commit.
+* **Recuperação de ambiente:** Em vez de reiniciar a estrutura do zero, o desafio consistiu em navegar pela árvore de diretórios, verificar a integridade dos artefatos e retomar a orquestração dos contêineres, garantindo a conclusão da pipeline #15.
+
+Este processo reforçou que, para um profissional de DevSecOps, o domínio sobre a infraestrutura é tão crítico quanto o conhecimento das ferramentas de auditoria. A automação só é efetiva quando o ambiente que a sustenta é estável e bem gerido.
 
 ---
 

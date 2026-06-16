@@ -26,21 +26,20 @@ O repositório está organizado de forma cronológica e modular, onde cada pasta
 ### 📁 [Módulo 03: DevSecOps e Segurança Ativa](./Modulo_03-DevSecOps_e_Seguranca_Ativa) *(Concluído)*
 * **O que foi feito:** O fechamento do ciclo onde o ecossistema se torna verdadeiramente blindado, automatizado e resiliente. Realizei a auditoria de segurança de imagens com **Trivy** e utilizei o **Docker Slim** para aplicar engenharia reversa, reduzindo o footprint de uma aplicação Go de 896MB para 9.74MB. Construí esteiras de CI/CD completas no **GitLab CI/CD**, integrando análise estática de código (SAST) via **SonarQube** e análise de dependências (SCA) com **OWASP Dependency-Check**. Por fim, implementei um ecossistema de observabilidade em tempo real com **Prometheus e Grafana** para resposta a incidentes e automatizei 100% do deploy desse ambiente utilizando **Terraform** como Infraestrutura como Código (IaC).
 
-### 📁 [Estudo de Caso](./Estudo_de_Caso) *(Brevemente)*
-* **O que será feito:** Um espaço exclusivo dedicado à análise aprofundada de um cenário real de mercado, aplicando de forma prática e integrada todas as competências de engenharia, automação e segurança adquiridas ao longo da especialização.
-
+### 📁 [Estudo de Caso](./Estudo_de_Caso) *(Concluído)*
+* **O que foi feito:** O ápice da especialização. Desenhei e implementei uma arquitetura de DevSecOps real com foco em Hardening e automação de alta performance. Construí uma esteira de CI/CD utilizando **GitHub Actions** para uma aplicação em **Python**. O pipeline aplica o conceito de *Shift-Left* integrando paralelismo inteligente com análise estática (SAST) via **Bandit**, análise de dependências (SCA) via **Pip-Audit**, e inspeção de qualidade com **SonarCloud**, garantindo o bloqueio de vulnerabilidades antes do empacotamento e publicação segura da imagem no Docker Hub.
 ---
 
-## 🛠️ Tecnologias e Ferramentas Dominadas
+## 🛠️ Tecnologias e Ferramentas Utilizadas
 
 ### Visão Categorizada
 * **Cultura & Processos:** DevOps, DevSecOps, Secure SDLC, Planejamento Ágil (Scrum/Kanban), Gestão de Vulnerabilidades, Resposta a Incidentes, Engenharia de Confiabilidade (SRE).
 * **Infraestrutura como Código (IaC):** Terraform, HashiCorp HCL.
-* **Segurança, SAST & SCA:** SonarQube, OWASP Dependency-Check, Trivy (Análise de CVEs, Pacotes e Licenças).
-* **Observabilidade & Telemetria:** Prometheus, Grafana (Criação de Dashboards, Monitoramento de Métricas e Status de Disponibilidade).
-* **Contêineres & Otimização:** Docker, Docker Compose, Docker Slim (Mitigação de Superfície de Ataque e Redução de Footprint).
-* **Controle de Versão & CI/CD:** Git, GitLab CI/CD (Construção de Pipelines, Automação de Testes e Gatekeepers de Segurança).
-* **Linguagens, Ambientes & SO:** Golang (Go CLI, Criação de APIs, Instrumentação de Métricas), Linux, Bash Shell Scripting.
+* **Segurança, SAST & SCA:** SonarQube, SonarCloud, OWASP Dependency-Check, Trivy, Bandit, Pip-Audit.
+* **Observabilidade & Telemetria:** Prometheus, Grafana.
+* **Contêineres, Artefatos & Otimização:** Docker, Docker Compose, Docker Hub, Docker Slim.
+* **Controle de Versão & CI/CD:** Git, GitLab CI/CD, GitHub Actions.
+* **Linguagens, Ambientes & SO:** Python, Golang, Linux, Bash Shell Scripting, PowerShell, VS Code.
 
 ### Painel Visual de Tecnologias
 <p align="left">
@@ -50,8 +49,13 @@ O repositório está organizado de forma cronológica e modular, onde cada pasta
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus" />
   <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Docker_Hub-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub" />
   <img src="https://img.shields.io/badge/GitLab_CI/CD-181717?style=for-the-badge&logo=gitlab&logoColor=orange" alt="GitLab CI/CD" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
+  <img src="https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
